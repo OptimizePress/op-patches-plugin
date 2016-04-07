@@ -1,0 +1,25 @@
+# OptimizePress Patches Plugin
+
+##Description
+
+This plugin adds a screen to WordPress Tools menu and makes it easy to install available patch versions of OptimizePress.
+
+Install and activate the plugin, then go to Tools -- OP Patches and follow the instructions.
+
+##Installation
+
+1. Click Download ZIP button on the right
+2. Install plugin archive through WordPress' Add plugin screen
+3. Activate the plugin
+
+##Requirements
+* Requires at least: 3.5
+* Stable tag: 1.0
+* License: GPLv2 or later
+* License URI: [http://www.gnu.org/licenses/gpl-2.0.html](http://www.gnu.org/licenses/gpl-2.0.html)
+
+
+##Changelog
+
+####1.0
+* Initial release
