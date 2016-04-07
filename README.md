@@ -8,7 +8,7 @@ Install and activate the plugin, then go to Tools -- OP Patches and follow the i
 
 ##Installation
 
-1. Click Download ZIP button on the right
+1. Click Download ZIP button on the top right
 2. Install plugin archive through WordPress' Add plugin screen
 3. Activate the plugin
 
