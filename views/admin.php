@@ -14,15 +14,18 @@
         <p>
             Please note, the visitor-facing pages of your website will still work as normal and be unaffected by this change, however the main symptom of this incompatibility is the functionality of the LiveEditor.
         </p>
-        <p>
-            <strong><em>Unfortunately, you are using OptimizePress older than 2.4.0 and need to upgrade at <a href="http://members.optimizepress.com" target="_blank">OptimizePress Members Area</a>.</em></strong>
-        </p>
+
     <?php if (!isset($patches[$type]) || empty($patches[$type])) : ?>
             <p><?php _e('There are no patches available for your version.', 'optimizepress_patch'); ?></p>
     <?php else : ?>
             <h3 class="title"><?php printf(__('Available patches for <em>%s</em>', 'optimizepress_patch'), 'OptimizePress ' . $type); ?></h3>
     <?php if (version_compare(OP_VERSION, '2.4.0', '>=') === true) : ?>
         <p><?php _e('Please install the patch from the list below: ', 'optimizepress_patch'); ?></p>
+    <?php endif; ?>
+    <?php if (version_compare(OP_VERSION, '2.4.0', '<') === true) : ?>
+        <p>
+            <strong><em>Unfortunately, you are using OptimizePress older than 2.4.0 and need to upgrade at <a href="http://members.optimizepress.com" target="_blank">OptimizePress Members Area</a>.</em></strong>
+        </p>
     <?php endif; ?>
     <table class="wp-list-table widefat fixed posts" cellspacing="0">
         <thead>
