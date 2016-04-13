@@ -30,8 +30,8 @@
     <table class="wp-list-table widefat fixed posts" cellspacing="0">
         <thead>
             <tr>
-                <th><?php _e('Name', 'optimizepress_patch'); ?></th>
-                <th><?php _e('Description', 'optimizepress_patch'); ?></th>
+                <th><?php _e('Name', 'optimizepress-patch'); ?></th>
+                <th><?php _e('Description', 'optimizepress-patch'); ?></th>
             </tr>
         </thead>
         <tbody>
@@ -39,7 +39,7 @@
             <tr<?php if ($a % 2) echo ' class="alternate"'; ?>>
                 <td>
                     <p><strong><?php echo $patch->name; ?></strong></p>
-                    <a href="<?php echo esc_url(add_query_arg(array('page' => 'optimizepress_patch', 'tab' => 'patches', 'patch_id' => $patch->id, 'patch_name' => urlencode($patch->name), 'type' => $type), admin_url('tools.php'))); ?>"><?php _e('Install', 'optimizepress_patch'); ?></a>
+                    <a href="<?php echo esc_url(add_query_arg(array('page' => 'optimizepress-patch', 'tab' => 'patches', 'patch_id' => $patch->id, 'patch_name' => urlencode($patch->name), 'type' => $type), admin_url('tools.php'))); ?>"><?php _e('Install', 'optimizepress-patch'); ?></a>
                 </td>
                 <td>
                     <p><?php echo $patch->description; ?></p>
